@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic Game</title>
+    <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
+
+    <!--The div for the words written on the website-->
+    <div id = "words">
+    <h1>The Psychic Game</h1>
+        <p>Guess what letter I am thinking of</p>
+        <p>Wins:</p>
+        <p>Losses:</p>
+        <p>Guesses Left:</p>
+        <p>Your Guesess so Far:</p>
+        <input type="text" id="userText" name="t"/>
+        </div>
+
+    <!--Javascript script-->
+    <script type ="text/javascript">
+    
+    //$(document).ready(function() {
+    // letter choices for the computer
+    const numbers = [
+        "a", "b", "c", "d", "e",
+        "f", "g", "h", "i", "j",
+        "k", "l", "m", "n", "o",
+        "p", "q", "r", "s", "t",
+        "u", "v", "w", "x", "y",
+        "z"
+    ];
+    
+   
+    // declare the variables
+    const wins = 0;
+    const losses = 0;
+    const totalGuesses = 9;
+    const TrysSoFar = [];
+
+//computers turn
+    let numChoices = numbers[Math.floor(Math.random()*numbers.length)];
+    console.log(numChoices)
+    console.log(numChoices.length)
+
+    for (let i =0; i < numbers.length; i++){
+    }
+
+// I was able to do the HTML and allow the user to input text. Set the variables and start the options for the computers  turn but I am lost after
+// this :/
+    
+    
+    </script>
     
 </body>
 </html>
