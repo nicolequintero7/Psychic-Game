@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Psychic Game</title>
-    <!-- Added link to the jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html lang="en-us">
 
+        <!-- Added link to the jQuery Library -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Psychic Game</title>
 </head>
+
 <body>
 
-    <!--The div for the words written on the website-->
-    <div id = "words">
-    <h1>The Psychic Game</h1>
-        <p>Guess what letter I am thinking of</p>
-        <p>Wins:</p>
-        <p>Losses:</p>
-        <p>Guesses Left:</p>
-        <p>Your Guesess so Far:</p>
-        <input type="text" id="userText" name="t"/>
-        </div>
+    <div class="container">
+  <!-- The title of the page -->
+  <h1><a href="https://fontmeme.com/fonts/sweet-november-font/"><img src="https://fontmeme.com/permalink/190910/fc52b322ec1697bdf1bb18d5383c7756.png" alt="sweet-november-font" border="0"></a></h1>
 
-    <!--Javascript script-->
-    <script type ="text/javascript">
-    
-    //$(document).ready(function() {
-    // letter choices for the computer
-    const numbers = [
-        "a", "b", "c", "d", "e",
-        "f", "g", "h", "i", "j",
-        "k", "l", "m", "n", "o",
-        "p", "q", "r", "s", "t",
-        "u", "v", "w", "x", "y",
-        "z"
-    ];
-    
-   
-    // declare the variables
-    const wins = 0;
-    const losses = 0;
-    const totalGuesses = 9;
-    const TrysSoFar = [];
+  <p>Guess what letter I'm thinking of</p>
+  <div class="boxshadow" id="first">
+ 
 
-//computers turn
-    let numChoices = numbers[Math.floor(Math.random()*numbers.length)];
-    console.log(numChoices)
-    console.log(numChoices.length)
+  
+  <!-- This is where we will have the win counter in HTML. It initially shows 0  -->
+  <p>Wins: <span id="userWins">0</span></p>
+</div>
 
-    for (let i =0; i < numbers.length; i++){
-    }
+<div class="boxshadow" id="first">
+  <!-- This is where we will have the loss counter in HTML. It initially shows 0 -->
+  <p>Losses: <span id="userLosses">0</span></p>
+</div>
 
-// I was able to do the HTML and allow the user to input text. Set the variables and start the options for the computers  turn but I am lost after
-// this :/
-    
-    
-    </script>
-    
+<div class="boxshadow" id="second">
+  <!-- This is where we will post the guessesLeft. Initially nothing is shown. -->
+  <p>Guesses Left: <span id="guesses-left"></span></p>
+</div>
+
+<div class="boxshadow" id="second">
+  <!-- This is where we will post the guessesSoFar. Initially nothing is shown. -->
+  <p>Your Guesses so far: <span id="guesses-so-far"></span></p>
+</div>
+
+  <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+
+</div>
+
+  <!-- Link to JavaScript game.js -->
+
+  <script type="text/javascript" src="assets/homepage.js"></script>
+  
+  
+
 </body>
+
 </html>
